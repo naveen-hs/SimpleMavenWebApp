@@ -4,7 +4,7 @@ git 'https://github.com/naveen-hs/SimpleMavenWebApp'
 }
 stage('Compile and package'){
   def mvnHome=tool name: 'Maven', type: 'maven'
-sh '${mvnHome}/bin/mvn package'
+sh "${mvnHome}/bin/mvn package"
 } 
 }
 
