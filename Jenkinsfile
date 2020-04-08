@@ -7,7 +7,7 @@ stage('Compile and package'){
 sh "${mvnHome}/bin/mvn package"
 } 
   stage('Deploy on tomcat'){
- sh "sudo cp /var/lib/jenkins/workspace/GitWithMaven/target/*.war /var/lib/tomcat8/webapps/"
+ sh "cp /var/lib/jenkins/workspace/GitWithMaven/target/*.war /var/lib/tomcat8/webapps/"
   }
 }
 
